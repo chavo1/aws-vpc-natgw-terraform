@@ -1,0 +1,5 @@
+I, [2019-09-26T18:19:04.038787 #3860]  INFO -- Kitchen: -----> Starting Kitchen (v1.25.0)
+I, [2019-09-26T18:19:06.078272 #3860]  INFO -- Kitchen: -----> Destroying <default-terraform>...
+I, [2019-09-26T18:19:06.139628 #3860]  INFO -- Kitchen: Terraform v0.12.9
+I, [2019-09-26T18:19:06.695022 #3860]  INFO -- Kitchen: + provider.aws v2.29.0
+I, [2019-09-26T18:20:35.470564 #3860]  INFO -- Kitchen: -----> Kitchen is finished. (1m31.43s)

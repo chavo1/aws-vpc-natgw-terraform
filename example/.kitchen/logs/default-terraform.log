@@ -1,0 +1,67 @@
+I, [2019-09-26T18:19:06.078336 #3860]  INFO -- default-terraform: -----> Destroying <default-terraform>...
+W, [2019-09-26T18:19:06.712264 #3860]  WARN -- default-terraform: Running command `terraform init -input=false -lock=true -lock-timeout=0s  -force-copy -backend=true  -get=true -get-plugins=true -verify-plugins=true` in directory /Users/chavdar.rakov/Downloads/chavo1/consul/chavo-project/aws-vpc-natgw-terraform/example
+I, [2019-09-26T18:19:06.786487 #3860]  INFO -- default-terraform: [0m[1mInitializing modules...[0m
+I, [2019-09-26T18:19:06.806443 #3860]  INFO -- default-terraform: 
+I, [2019-09-26T18:19:06.806554 #3860]  INFO -- default-terraform: [0m[1mInitializing the backend...[0m
+I, [2019-09-26T18:19:06.829821 #3860]  INFO -- default-terraform: 
+I, [2019-09-26T18:19:06.830026 #3860]  INFO -- default-terraform: [0m[1mInitializing provider plugins...[0m
+I, [2019-09-26T18:19:07.364118 #3860]  INFO -- default-terraform: 
+I, [2019-09-26T18:19:07.364555 #3860]  INFO -- default-terraform: The following providers do not have any version constraints in configuration,
+I, [2019-09-26T18:19:07.364680 #3860]  INFO -- default-terraform: so the latest version was installed.
+I, [2019-09-26T18:19:07.364713 #3860]  INFO -- default-terraform: 
+I, [2019-09-26T18:19:07.364739 #3860]  INFO -- default-terraform: To prevent automatic upgrades to new major versions that may contain breaking
+I, [2019-09-26T18:19:07.364942 #3860]  INFO -- default-terraform: changes, it is recommended to add version = "..." constraints to the
+I, [2019-09-26T18:19:07.364967 #3860]  INFO -- default-terraform: corresponding provider blocks in configuration, with the constraint strings
+I, [2019-09-26T18:19:07.364987 #3860]  INFO -- default-terraform: suggested below.
+I, [2019-09-26T18:19:07.365008 #3860]  INFO -- default-terraform: 
+I, [2019-09-26T18:19:07.365029 #3860]  INFO -- default-terraform: * provider.aws: version = "~> 2.29"
+I, [2019-09-26T18:19:07.365051 #3860]  INFO -- default-terraform: 
+I, [2019-09-26T18:19:07.365089 #3860]  INFO -- default-terraform: [0m[1m[32mTerraform has been successfully initialized![0m[32m[0m
+W, [2019-09-26T18:19:07.380576 #3860]  WARN -- default-terraform: Running command `terraform workspace select kitchen-terraform-default-terraform` in directory /Users/chavdar.rakov/Downloads/chavo1/consul/chavo-project/aws-vpc-natgw-terraform/example
+W, [2019-09-26T18:19:07.464041 #3860]  WARN -- default-terraform: Running command `terraform destroy -auto-approve -lock=true -lock-timeout=0s -input=false  -parallelism=10 -refresh=true  ` in directory /Users/chavdar.rakov/Downloads/chavo1/consul/chavo-project/aws-vpc-natgw-terraform/example
+I, [2019-09-26T18:19:13.543353 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_eip.gw_ip_nat: Refreshing state... [id=eipalloc-0e6fd723208337af9][0m
+I, [2019-09-26T18:19:13.543470 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_vpc.consul_vpc: Refreshing state... [id=vpc-04ef3a3133c2f6e44][0m
+I, [2019-09-26T18:19:19.067723 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_internet_gateway.internet_gw: Refreshing state... [id=igw-05dd99135123c7536][0m
+I, [2019-09-26T18:19:19.070739 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_subnet.private: Refreshing state... [id=subnet-0908f6757d1e6b043][0m
+I, [2019-09-26T18:19:19.071523 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_security_group.internet: Refreshing state... [id=sg-0840865fbe903e893][0m
+I, [2019-09-26T18:19:19.073692 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_subnet.public: Refreshing state... [id=subnet-038c057d84d42cd3d][0m
+I, [2019-09-26T18:19:19.629817 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_route_table.public: Refreshing state... [id=rtb-0fc3854da5e60ccb7][0m
+I, [2019-09-26T18:19:19.648326 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_route_table_association.private: Refreshing state... [id=rtbassoc-0daabc45df72b964a][0m
+I, [2019-09-26T18:19:19.787554 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_nat_gateway.nat_gw: Refreshing state... [id=nat-04e128a67a45efb77][0m
+I, [2019-09-26T18:19:20.199093 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_route_table_association.public: Refreshing state... [id=rtbassoc-098c7e5d1f4aacf22][0m
+I, [2019-09-26T18:19:20.341363 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_route.throug_nat_gw: Refreshing state... [id=r-rtb-0fa0a0d9f34571c951080289494][0m
+I, [2019-09-26T18:19:26.134669 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_route.throug_nat_gw: Destroying... [id=r-rtb-0fa0a0d9f34571c951080289494][0m[0m
+I, [2019-09-26T18:19:26.136058 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_route_table_association.public: Destroying... [id=rtbassoc-098c7e5d1f4aacf22][0m[0m
+I, [2019-09-26T18:19:26.136179 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_route_table_association.private: Destroying... [id=rtbassoc-0daabc45df72b964a][0m[0m
+I, [2019-09-26T18:19:26.141058 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_security_group.internet: Destroying... [id=sg-0840865fbe903e893][0m[0m
+I, [2019-09-26T18:19:26.699406 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_route_table_association.private: Destruction complete after 1s[0m[0m
+I, [2019-09-26T18:19:26.708214 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_route_table_association.public: Destruction complete after 1s[0m[0m
+I, [2019-09-26T18:19:26.721639 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_route_table.public: Destroying... [id=rtb-0fc3854da5e60ccb7][0m[0m
+I, [2019-09-26T18:19:26.721721 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_subnet.private: Destroying... [id=subnet-0908f6757d1e6b043][0m[0m
+I, [2019-09-26T18:19:26.743827 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_route.throug_nat_gw: Destruction complete after 1s[0m[0m
+I, [2019-09-26T18:19:26.750932 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_nat_gateway.nat_gw: Destroying... [id=nat-04e128a67a45efb77][0m[0m
+I, [2019-09-26T18:19:27.415629 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_security_group.internet: Destruction complete after 1s[0m[0m
+I, [2019-09-26T18:19:28.022637 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_subnet.private: Destruction complete after 1s[0m[0m
+I, [2019-09-26T18:19:28.423359 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_route_table.public: Destruction complete after 1s[0m[0m
+I, [2019-09-26T18:19:36.753065 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_nat_gateway.nat_gw: Still destroying... [id=nat-04e128a67a45efb77, 10s elapsed][0m[0m
+I, [2019-09-26T18:19:46.754742 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_nat_gateway.nat_gw: Still destroying... [id=nat-04e128a67a45efb77, 20s elapsed][0m[0m
+I, [2019-09-26T18:19:56.757414 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_nat_gateway.nat_gw: Still destroying... [id=nat-04e128a67a45efb77, 30s elapsed][0m[0m
+I, [2019-09-26T18:20:06.758191 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_nat_gateway.nat_gw: Still destroying... [id=nat-04e128a67a45efb77, 40s elapsed][0m[0m
+I, [2019-09-26T18:20:16.761562 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_nat_gateway.nat_gw: Still destroying... [id=nat-04e128a67a45efb77, 50s elapsed][0m[0m
+I, [2019-09-26T18:20:22.653519 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_nat_gateway.nat_gw: Destruction complete after 56s[0m[0m
+I, [2019-09-26T18:20:22.661675 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_internet_gateway.internet_gw: Destroying... [id=igw-05dd99135123c7536][0m[0m
+I, [2019-09-26T18:20:22.661855 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_eip.gw_ip_nat: Destroying... [id=eipalloc-0e6fd723208337af9][0m[0m
+I, [2019-09-26T18:20:22.661934 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_subnet.public: Destroying... [id=subnet-038c057d84d42cd3d][0m[0m
+I, [2019-09-26T18:20:23.957136 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_subnet.public: Destruction complete after 1s[0m[0m
+I, [2019-09-26T18:20:23.999092 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_eip.gw_ip_nat: Destruction complete after 1s[0m[0m
+I, [2019-09-26T18:20:32.666416 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_internet_gateway.internet_gw: Still destroying... [id=igw-05dd99135123c7536, 10s elapsed][0m[0m
+I, [2019-09-26T18:20:34.329463 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_internet_gateway.internet_gw: Destruction complete after 11s[0m[0m
+I, [2019-09-26T18:20:34.341256 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_vpc.consul_vpc: Destroying... [id=vpc-04ef3a3133c2f6e44][0m[0m
+I, [2019-09-26T18:20:35.251568 #3860]  INFO -- default-terraform: [0m[1mmodule.consul_vpc.aws_vpc.consul_vpc: Destruction complete after 1s[0m[0m
+I, [2019-09-26T18:20:35.267985 #3860]  INFO -- default-terraform: [0m[1m[32m
+I, [2019-09-26T18:20:35.268872 #3860]  INFO -- default-terraform: Destroy complete! Resources: 11 destroyed.[0m
+W, [2019-09-26T18:20:35.292948 #3860]  WARN -- default-terraform: Running command `terraform workspace select default` in directory /Users/chavdar.rakov/Downloads/chavo1/consul/chavo-project/aws-vpc-natgw-terraform/example
+I, [2019-09-26T18:20:35.370294 #3860]  INFO -- default-terraform: [0m[32mSwitched to workspace "default".[0m
+W, [2019-09-26T18:20:35.384436 #3860]  WARN -- default-terraform: Running command `terraform workspace delete kitchen-terraform-default-terraform` in directory /Users/chavdar.rakov/Downloads/chavo1/consul/chavo-project/aws-vpc-natgw-terraform/example
+I, [2019-09-26T18:20:35.455305 #3860]  INFO -- default-terraform: [0m[32mDeleted workspace "kitchen-terraform-default-terraform"![0m
+I, [2019-09-26T18:20:35.469920 #3860]  INFO -- default-terraform: Finished destroying <default-terraform> (1m29.39s).
